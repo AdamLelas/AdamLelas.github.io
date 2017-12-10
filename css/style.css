@@ -1,0 +1,333 @@
+.edu        {
+    padding-top:20px;
+    margin-top: -20px;
+    min-height: 100vh;
+    padding-left: 10px; 
+    padding-right: 10px;
+    /*    background-color: red;*/
+
+}
+
+.projects   {
+    padding-top:20px;
+    margin-top: -20px;
+    min-height: 100vh;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    /*    background-color: green;*/
+
+}
+
+.hobbies    {
+    padding-top:20px;
+    margin-top: -20px;
+    min-height: 100vh; 
+    padding-left: 10px;
+    padding-right: 10px; 
+    /*    background-color: purple;*/
+
+}
+
+.panel-body{
+    color:black;
+}
+.aboutme    {
+    padding-top:20px;
+    min-height: 100vh; 
+    padding-left: 10px; 
+    padding-right: 10px;
+    background-color: #615a71;
+    margin-top: -40px;
+}
+
+
+
+
+html { 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{    
+
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 1400px;
+    padding-top:40px;
+    position: relative;
+}
+
+.images{
+    width:100%;
+    margin-left:0em;
+    margin:0em;
+    padding:0em;
+}
+
+
+#myCarousel {
+    max-height: 400px; 
+    max-width: 400px;
+}
+
+#myCarousel img {
+    height:400px;
+    width:400px;
+}
+
+.border-left-light{
+    border-left: solid;
+    border-left-color: darkgrey ;
+}
+
+.border-bottom-light{    
+    border-bottom: solid;
+    border-bottom-color: darkgrey ;
+}
+
+.border-right-light{
+    
+    border-right: solid;
+    border-right-color: darkgrey ;
+}
+
+.aboutme img{
+    margin-bottom: -25px;    
+}
+
+.anchor {
+    display:block;
+    position:relative;
+    top:-50px;
+    visibility:hidden;
+}
+
+.dimgray{
+    background-color:#615a71;
+    color:#D7D0D9;
+}
+
+.panel-title a {
+    display: block;
+    padding: 10px 15px;
+    margin: -10px -15px;
+}
+
+
+/* ACCORDIAN ARROWS*/
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings'; 
+    content: "\e114";    
+    float: right;        
+    color: grey;         
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
+
+/* ACCORDIAN ARROWS */
+
+
+
+
+
+/*  SOCIAL MEDIA ICONS STARTS  */
+
+.social-nav{
+    background-color: #f1ebf5;
+    position: relative;
+    max-width: 350px;
+    min-width: 280px;
+    height:52px;
+    border-style: solid;
+}
+
+.social-nav .fa {
+    color:#5f5b5b;
+}
+
+.social-nav i {
+    font-size: 25px; 
+}
+
+ul.nav {
+    text-align: center;
+}
+ul.nav li{
+    display: inline-block;
+}
+
+/*  SOCIAL MEDIA ICONS ENDS */
+
+
+
+
+
+/*BUTTON CIRCLES STARTS*/
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    border-radius: 15px;
+}
+.btn-circle-giant {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 24px;
+    border-radius: 75px;
+}
+
+/*BUTTON CIRLCLES ENDS*/
+
+
+
+/* NAV TABS - GRADES STARTS */
+
+.nav-tabs  li {
+
+    width:100px;
+    display:inline-block;
+    text-align: justify;
+
+}
+
+.nav-tabs {
+    display: flex;
+}
+.nav-tabs > li {
+    justify-content: space-between;
+}
+.nav-tabs > li > a {
+    color: #000 !important;
+}
+
+.grades {    
+    width: 300px;
+}
+
+
+/* NAV TABS - GRADES ENDS */
+
+
+
+
+
+
+
+
+/***********************
+*    /=============\   * 
+*   | Media Queries |  *
+*    \=============/   *
+************************/
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    body {
+        /*        background-color: green;*/
+    }
+}/*lg*/
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    body {
+        /*        background-color: yellow;*/
+    }
+
+    .social-nav ul{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+}/*md*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 768px) { 
+    body {
+        /*        background-color: orange;*/
+    }
+    .navbar-inner{
+        margin-left: 
+    }
+
+    .navbar-inverse { background-color:transparent;
+        border-color:transparent;
+    }
+    #myNavbar {
+        background: #222 ;
+        float: right;
+        width:150px;
+        /*        height: 177px;*/
+    }
+
+    .navbar-inverse {
+        border-color:transperant;
+    }
+
+    .navbar-inverse::after {
+        background: #222 none repeat scroll 0 0;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+}/*sm*/
+
+/* Extra small devides (vertical phones) */
+@media (max-width:575px){
+    body{
+        /*        background-color: rebeccapurple;*/
+    }
+    .navbar-inner{
+        margin-left: 0;
+    }
+
+    .navbar-inverse { background-color:transparent;
+        border-color:transparent;
+    }
+    #myNavbar {
+        background: #222 ;
+        float: right;
+        width:150px;
+        /*        height: 177px;*/
+    }
+
+    .navbar-inverse {
+        border-color:transperant;
+    }
+
+    .navbar-inverse::after {
+        background: #222 none repeat scroll 0 0;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    .btn-circle-giant {
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        padding: 6px 0;
+        font-size: 15px;
+        line-height: 1.428571429;
+        border-radius: 75px;
+    }
+
+
+}/*xs*/
+
+
+
+
+
